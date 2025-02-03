@@ -20,7 +20,7 @@ Below are some business rules important to the operation of the system:
 
 • Allow the addition of a game or game list to the system.
 
-• Allow including a game in a specific game list (or associating it).
+• Allow including a game in a specific game list, or associating it with one.
 
 • Allow the update of a game or game list in the system.
 
