@@ -1,0 +1,28 @@
+-- TB_GAME Table
+CREATE TABLE TB_GAME (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL UNIQUE,
+    release_year INT NOT NULL,
+    genre VARCHAR(255) NOT NULL,
+    platforms VARCHAR(255) NOT NULL,
+    score DOUBLE NOT NULL,
+    img_url VARCHAR(255) NOT NULL,
+    short_description TEXT NOT NULL,
+    long_description TEXT NOT NULL
+);
+
+-- TB_GAME_LIST Table
+CREATE TABLE TB_GAME_LIST (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL UNIQUE
+);
+
+-- TB_BELONGING Table
+CREATE TABLE TB_BELONGING (
+    game_id BIGINT NOT NULL,
+    game_list_id BIGINT NOT NULL,
+    position INT,
+    PRIMARY KEY (game_id, game_list_id),
+    FOREIGN KEY (game_id) REFERENCES TB_GAME(id) ON DELETE CASCADE,
+    FOREIGN KEY (game_list_id) REFERENCES TB_GAME_LIST(id) ON DELETE CASCADE
+);
