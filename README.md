@@ -4,7 +4,7 @@
 I developed a Rest API to manage video games that can be grouped into game lists within a video game system, built by using **Spring Boot and Java**, providing CRUD (Create, Read, Update, Delete) operations. This API allows storing game information, such as: title, release year, genre, platforms, and score. Additionally, it supports the storage of game list information with its name. The game list allows to group multiple games together and organize them independently.
 
 I used some libraries for this Rest API such **Spring Web, Spring Data JPA, Validation, ModelMapper,
-H2 Database and SpringDoc OpenAPI Starter WebMVC UI 2.7.0 (for the API documentation) **.
+H2 Database and SpringDoc OpenAPI Starter WebMVC UI 2.7.0 (for the API documentation)**.
 
 ## Requirements
 
