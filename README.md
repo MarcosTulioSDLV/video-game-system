@@ -30,7 +30,7 @@ Below are some business rules important to the operation of the system:
 
 • Allow the removal of a game or game list from the system.
 
-• After a game is removed from the system, all remaining games in the associated game list must be updated to reflect their correct positions.
+• After a game is removed from the system, all remaining games in the associated game list must be automatically updated to reflect their correct positions.
 
 ## Database Config
 For test this API, an external Database is not necessary because an embedded Database (H2 Database) was used with the following configuration properties:
